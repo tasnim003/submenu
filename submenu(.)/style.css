@@ -1,0 +1,37 @@
+*{
+	padding:0;
+	margin:0;
+}
+.menubar{
+	background:#2196f3d6;
+	padding:20px 25px;
+}
+.menubar ul{
+	list-style:none;
+}
+.menubar ul li{
+	display:inline;
+	margin:0px 8px;
+	padding:5px 8px;
+	position:relative;
+}
+.menubar ul li a{
+	color:white;
+	font-size:18px;
+	text-decoration:none;
+	font-weight:600;
+}
+
+.menubar ul li > ul{
+	position:absolute;
+	background:#2196f3d6;
+	left:-7px;
+    top:44px;
+	width:200px;
+	display:none;
+	transition:0.35s;
+}
+
+.menubar ul li:hover > ul{
+	display:block;
+}
